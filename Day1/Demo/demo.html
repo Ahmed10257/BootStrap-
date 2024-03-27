@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*1 em = 16 px*/
+        .parent{
+            font-size: 18px;
+        }
+        .child{
+            font-size: 1.5rem;
+            padding: 2em 1em;
+        }
+
+        html{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent"><!--18-->
+        parent
+        <div class="child"><!--27-->
+            child
+            <div class="child"><!--40.5-->
+                child
+                <div><!--60.75-->
+                    child
+                    <div class="child">
+                        child
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
